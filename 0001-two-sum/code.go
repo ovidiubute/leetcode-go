@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package twosum
 
 func twoSum(nums []int, target int) []int {
 	db := map[int]int{}
@@ -18,8 +16,4 @@ func twoSum(nums []int, target int) []int {
 	}
 
 	return []int{0, 0}
-}
-
-func main() {
-	fmt.Println(twoSum([]int{3, 2, 4}, 6))
 }
