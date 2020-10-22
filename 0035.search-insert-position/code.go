@@ -1,8 +1,8 @@
 package searchinsertposition
 
 func searchInsert(nums []int, target int) int {
-	for i := 0; i < len(nums); i++ {
-		if nums[i] == target || nums[i] > target {
+	for i, x := range nums {
+		if x >= target {
 			return i
 		}
 	}
